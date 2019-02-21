@@ -1,0 +1,5 @@
+SSH to server via jumphost
+>> ssh -t <jumphost> ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i .ssh/dev.pem <user>@<server_ip>
+
+SSH tunnel
+>> ssh -N -f <user_name>@<server_ip> -L <port>:<server_ip>:<port>
